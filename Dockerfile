@@ -5,7 +5,7 @@ RUN \
   echo "deb https://deb.nodesource.com/node_14.x buster main" > /etc/apt/sources.list.d/nodesource.list && \
   wget -qO- https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - && \
   apt-get update && \
-  apt-get install -yqq nodejs git
+  apt-get install -yqq nodejs git unixodbc
 
 # Add CommCare Sync codebase
 RUN git clone https://github.com/dimagi/commcare-sync.git code
